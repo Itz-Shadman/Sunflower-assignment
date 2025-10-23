@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Rina Das",
+    "providerEmail": "rina@skillswap.com",
+    "price": 15,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Basic yoga routines to improve flexibility.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Fitness"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Digital Photography",
+    "providerName": "John Lee",
+    "providerEmail": "john@skillswap.com",
+    "price": 25,
+    "rating": 4.7,
+    "slotsAvailable": 2,
+    "description": "Learn photography basics and editing techniques.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Photography"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Cooking Italian Cuisine",
+    "providerName": "Maria Gomez",
+    "providerEmail": "maria@skillswap.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Step-by-step Italian cooking classes.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Cooking"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Web Development Basics",
+    "providerName": "Tom Brown",
+    "providerEmail": "tom@skillswap.com",
+    "price": 40,
+    "rating": 4.9,
+    "slotsAvailable": 5,
+    "description": "Learn HTML, CSS, and basic JavaScript.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Technology"
+  }
+]
