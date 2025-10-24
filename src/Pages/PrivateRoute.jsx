@@ -1,4 +1,4 @@
-// src/components/PrivateRoute.jsx
+
 import React, { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../Firebase/Firebase.config";
