@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "../Firebase/Firebase.config";
@@ -36,49 +35,62 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <Toaster />
-      <div className="bg-white shadow-lg p-8 rounded-lg w-full max-w-md">
-        <h2 className="text-3xl font-bold text-center mb-6 text-blue-500">Login</h2>
-        <form onSubmit={handleEmailLogin} className="flex flex-col gap-4">
+      <div className="bg-white shadow-2xl p-8 rounded-2xl w-full max-w-md border border-gray-200">
+        <h2 className="text-4xl font-extrabold text-center mb-6 text-blue-600 tracking-wide">
+          Welcome Back 👋
+        </h2>
+
+        <form onSubmit={handleEmailLogin} className="flex flex-col gap-5">
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="input input-bordered w-full"
+            className="input input-bordered w-full rounded-lg py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
+
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
-              placeholder="Password"
+              placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="input input-bordered w-full pr-10"
+              className="input input-bordered w-full rounded-lg py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
             />
             <div
-              className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-xl"
+              className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-2xl text-gray-500 hover:text-blue-600 transition"
               onClick={() => setShowPassword(!showPassword)}
             >
               {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </div>
           </div>
-          <button type="submit" className="btn btn-primary w-full">Login</button>
+
+          <button
+            type="submit"
+            className="btn w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-transform transform hover:scale-105 shadow-md"
+          >
+            Login
+          </button>
         </form>
-        <div className="flex justify-between mt-2 text-sm">
-          <Link to="/forgot-password" className="text-blue-500 hover:underline">
+
+        <div className="flex justify-between mt-3 text-sm font-medium">
+          <Link to="/forgot-password" className="text-blue-600 hover:underline">
             Forgot Password?
           </Link>
-          <Link to="/signup" className="text-blue-500 hover:underline">
-            Signup
+          <Link to="/signup" className="text-blue-600 hover:underline">
+            Create Account
           </Link>
         </div>
-        <div className="divider">OR</div>
+
+        <div className="divider text-gray-500 mt-6">OR</div>
+
         <button
           onClick={handleGoogleLogin}
-          className="btn btn-outline w-full"
+          className="btn w-full border-2 border-gray-300 bg-white text-blue-400 hover:bg-gray-50 flex items-center justify-center gap-2 py-3 rounded-lg transition-all hover:scale-105"
         >
           Continue with Google
         </button>
