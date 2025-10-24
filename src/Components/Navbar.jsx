@@ -4,6 +4,7 @@ import { CiLogin } from "react-icons/ci";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../Firebase/Firebase.config";
 import { NavLink, useNavigate } from "react-router";
+import image from "../assets/myImage.jpg"; 
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-base-100 shadow-sm w-[90%] mx-auto">
-      {/* Navbar Start */}
+     
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,7 +60,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Navbar Center */}
+
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
@@ -71,7 +72,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Navbar End */}
+ 
       <div className="navbar-end">
         {!user ? (
           <>
@@ -84,10 +85,10 @@ const Navbar = () => {
           </>
         ) : (
           <div className="flex items-center gap-2">
-            <div className="tooltip tooltip-bottom" data-tip={user.displayName || user.email}>
+            <div className="tooltip tooltip-bottom" data-tip={user.displayName || user.email || "User"}>
               <img
-                src={user.photoURL || "https://i.postimg.cc/3x3QYVvF/user-avatar.png"}
-                alt={user.displayName}
+                src={user.photoURL || image} 
+                alt={user.displayName || "User"}
                 className="w-10 h-10 rounded-full object-cover border-2 border-primary cursor-pointer"
               />
             </div>

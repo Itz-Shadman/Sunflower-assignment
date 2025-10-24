@@ -1,9 +1,6 @@
-// src/Components/SkillsCard.jsx
 import React from 'react';
-import skills from "../../public/skilsData.json"; // adjust path
+import skills from "../../public/skilsData.json"; 
 import { Link } from 'react-router';
-
-
 const SkillsCard = () => {
   return (
     <div className="container mx-auto px-4 py-8 w-[90%]">
@@ -14,7 +11,7 @@ const SkillsCard = () => {
             key={skill.skillId} 
             className="card bg-base-100 shadow-xl"
             data-aos="fade-up"
-            data-aos-delay={index * 100} // stagger animation
+            data-aos-delay={index * 100} 
           >
             <figure>
               <img 

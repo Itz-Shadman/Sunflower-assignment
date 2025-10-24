@@ -8,7 +8,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Acoustic guitar classes for complete beginners.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Special_Shape_Violins_-_Deutsches_Museum_%28121281640%2B121281770%29.jpg",
     "category": "Music"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Conversational English sessions for non-native speakers.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Somewhereto_practice_boxing%2C_perform_spoken_word_and_train_parkour_at_Number_10_Downing_Street_%286211813847%29.jpg",
     "category": "Language"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Basic yoga routines to improve flexibility.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Yoga_Training_In_Rishikesh_Akshi_Yogashala_%28258662521%29.jpeg",
     "category": "Fitness"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.7,
     "slotsAvailable": 2,
     "description": "Learn photography basics and editing techniques.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/The_built_in_flash_of_a_SLR_camera%2C_Pentax_MZ-30%2C_firing_1.jpg",
     "category": "Photography"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Step-by-step Italian cooking classes.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Risotto_de_gambas%2C_restaurant_Danieli_%28Vienne%2C_Autriche%29.jpg",
     "category": "Cooking"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.9,
     "slotsAvailable": 5,
     "description": "Learn HTML, CSS, and basic JavaScript.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/10_Basics_of_JavaScript.png",
     "category": "Technology"
   }
 ]

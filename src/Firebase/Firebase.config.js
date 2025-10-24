@@ -1,16 +1,14 @@
-// src/Firebase/Firebase.config.js
+import { getAuth,GoogleAuthProvider } from "firebase/auth"
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC6uX6r0...your-real-key...",
-  authDomain: "myapp-12345.firebaseapp.com",
-  projectId: "myapp-12345",
-  storageBucket: "myapp-12345.appspot.com",
-  messagingSenderId: "720123456789",
-  appId: "1:720123456789:web:abcdef12345678",
+  apiKey: "AIzaSyAKi7hLj80MyWvRp6bWadZjH5Z4_Phlvz0",
+  authDomain: "sunflower-auth-99382.firebaseapp.com",
+  projectId: "sunflower-auth-99382",
+  storageBucket: "sunflower-auth-99382.firebasestorage.app",
+  messagingSenderId: "758133018979",
+  appId: "1:758133018979:web:f7bd9f95a0d486df8a0356"
 };
-
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();

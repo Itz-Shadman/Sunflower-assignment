@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { onAuthStateChanged, updateProfile } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";
 import { auth } from "../Firebase/Firebase.config";
-
+import image from "../assets/myImage.jpg"
 const Profile = () => {
   const [user, setUser] = useState(null);
   const [editMode, setEditMode] = useState(false);
@@ -40,7 +40,7 @@ const Profile = () => {
       {user ? (
         <div className="flex flex-col md:flex-row items-center gap-6 bg-base-100 shadow-lg p-6 rounded-lg">
           <img
-            src={user.photoURL || "https://i.postimg.cc/3x3QYVvF/user-avatar.png"}
+            src={user.photoURL || image}
             alt={user.displayName}
             className="w-32 h-32 rounded-full object-cover border-2 border-primary"
           />
