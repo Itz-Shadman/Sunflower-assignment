@@ -9,7 +9,7 @@ const SkillsCard = () => {
         {skills.map((skill, index) => (
           <div 
             key={skill.skillId} 
-            className="card bg-base-100 shadow-xl"
+            className="card bg-base-100 shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
             data-aos="fade-up"
             data-aos-delay={index * 100} 
           >
