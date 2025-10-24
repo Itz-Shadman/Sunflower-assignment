@@ -25,34 +25,27 @@ const Navbar = () => {
       console.error(error.message);
     }
   };
-
   return (
-    <nav className="bg-white shadow-sm fixed w-full z-50">
+    <nav className="bg-white shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          
-          {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <GiSunflower className="text-2xl text-yellow-500" />
-            <NavLink to="/" className="text-xl font-bold text-gray-800">
+            <NavLink to="/" className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
               Skillswap
             </NavLink>
           </div>
-
-          {/* Desktop menu */}
           <div className="hidden lg:flex lg:items-center lg:gap-6">
-            <NavLink to="/" className="hover:text-blue-500">Home</NavLink>
-            <NavLink to="/profile" className="hover:text-blue-500">Profile</NavLink>
+            <NavLink to="/" className="text-blue-600 hover:text-blue-700 transition-colors">Home</NavLink>
+            <NavLink to="/profile" className="text-blue-600 hover:text-blue-700 transition-colors">Profile</NavLink>
           </div>
-
-          {/* Desktop auth buttons */}
           <div className="hidden lg:flex lg:items-center lg:gap-2">
             {!user ? (
               <>
-                <NavLink to="/login" className="btn btn-sm gap-2">
+                <NavLink to="/login" className="btn btn-sm gap-2 text-white bg-blue-600 hover:bg-blue-700 transition-colors">
                   <CiLogin /> Login
                 </NavLink>
-                <NavLink to="/signup" className="btn btn-sm btn-outline">
+                <NavLink to="/signup" className="btn btn-sm btn-outline border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors">
                   Signup
                 </NavLink>
               </>
@@ -61,13 +54,13 @@ const Navbar = () => {
                 <img
                   src={user.photoURL || "/default-user.png"}
                   alt={user.displayName || "User"}
-                  className="w-10 h-10 rounded-full object-cover border-2 border-primary cursor-pointer"
+                  className="w-10 h-10 rounded-full object-cover border-2 border-blue-500 cursor-pointer"
                 />
                 <div className="absolute right-0 mt-2 w-36 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="px-4 py-2 text-sm">{user.displayName || user.email}</p>
+                  <p className="px-4 py-2 text-sm text-blue-600">{user.displayName || user.email}</p>
                   <button
                     onClick={handleLogout}
-                    className="w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+                    className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100 transition-colors"
                   >
                     Logout
                   </button>
@@ -75,12 +68,10 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          {/* Mobile hamburger */}
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-800 focus:outline-none"
+              className="text-blue-600 focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,23 +86,21 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden px-4 pb-4">
-          <NavLink to="/" className="block py-2 text-gray-700 hover:text-blue-500">Home</NavLink>
-          <NavLink to="/profile" className="block py-2 text-gray-700 hover:text-blue-500">Profile</NavLink>
+        <div className="lg:hidden px-4 pb-4 bg-white shadow-md">
+          <NavLink to="/" className="block py-2 text-blue-600 hover:text-blue-700 transition-colors">Home</NavLink>
+          <NavLink to="/profile" className="block py-2 text-blue-600 hover:text-blue-700 transition-colors">Profile</NavLink>
           {!user ? (
             <>
-              <NavLink to="/login" className="block py-2 text-gray-700 hover:text-blue-500">Login</NavLink>
-              <NavLink to="/signup" className="block py-2 text-gray-700 hover:text-blue-500">Signup</NavLink>
+              <NavLink to="/login" className="block py-2 text-blue-600 hover:text-blue-700 transition-colors">Login</NavLink>
+              <NavLink to="/signup" className="block py-2 text-blue-600 hover:text-blue-700 transition-colors">Signup</NavLink>
             </>
           ) : (
             <>
-              <p className="py-2 text-gray-700">{user.displayName || user.email}</p>
+              <p className="py-2 text-blue-600">{user.displayName || user.email}</p>
               <button
                 onClick={handleLogout}
-                className="w-full text-left py-2 text-gray-700 hover:text-red-500"
+                className="w-full text-left py-2 text-red-600 hover:text-red-700 transition-colors"
               >
                 Logout
               </button>
@@ -122,5 +111,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

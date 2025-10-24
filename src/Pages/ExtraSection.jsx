@@ -1,6 +1,5 @@
 import React from "react";
 import skills from "../../public/skilsData.json";
-
 const ExtraSection = () => {
   const topProviders = skills.sort((a, b) => b.rating - a.rating).slice(0, 3);
   return (
@@ -41,5 +40,4 @@ const ExtraSection = () => {
     </div>
   );
 };
-
 export default ExtraSection;

@@ -1,4 +1,4 @@
-// src/Pages/Signup.jsx
+
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup, updateProfile } from "firebase/auth";
 import { auth, googleProvider } from "../Firebase/Firebase.config";

@@ -4,7 +4,6 @@ import { auth, googleProvider } from "../Firebase/Firebase.config";
 import { toast, Toaster } from "react-hot-toast";
 import { Link, useNavigate, useLocation } from "react-router";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-
 export default function Login() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -12,7 +11,6 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-
   const handleEmailLogin = async (e) => {
     e.preventDefault();
     try {
@@ -23,7 +21,6 @@ export default function Login() {
       toast.error(error.message);
     }
   };
-
   const handleGoogleLogin = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
@@ -33,7 +30,6 @@ export default function Login() {
       toast.error(error.message);
     }
   };
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <Toaster />
@@ -41,7 +37,6 @@ export default function Login() {
         <h2 className="text-4xl font-extrabold text-center mb-6 text-blue-600 tracking-wide">
           Welcome Back 👋
         </h2>
-
         <form onSubmit={handleEmailLogin} className="flex flex-col gap-5">
           <input
             type="email"
@@ -51,7 +46,6 @@ export default function Login() {
             className="input input-bordered w-full rounded-lg py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
             required
           />
-
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
@@ -68,7 +62,6 @@ export default function Login() {
               {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </div>
           </div>
-
           <button
             type="submit"
             className="btn w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-transform transform hover:scale-105 shadow-md"
@@ -76,7 +69,6 @@ export default function Login() {
             Login
           </button>
         </form>
-
         <div className="flex justify-between mt-3 text-sm font-medium">
           <Link to="/forgot-password" className="text-blue-600 hover:underline">
             Forgot Password?
@@ -85,9 +77,7 @@ export default function Login() {
             Create Account
           </Link>
         </div>
-
         <div className="divider text-gray-500 mt-6">OR</div>
-
         <button
           onClick={handleGoogleLogin}
           className="btn w-full border-2 border-gray-300 bg-white text-blue-400 hover:bg-gray-50 flex items-center justify-center gap-2 py-3 rounded-lg transition-all hover:scale-105"
