@@ -1,3 +1,4 @@
+// This is extra section 
 import React from "react";
 import skills from "../../public/skilsData.json";
 const ExtraSection = () => {

@@ -1,4 +1,4 @@
-
+// This is sign up section 
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup, updateProfile } from "firebase/auth";
 import { auth, googleProvider } from "../Firebase/Firebase.config";

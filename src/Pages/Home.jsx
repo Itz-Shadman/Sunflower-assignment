@@ -1,3 +1,4 @@
+// This is home section 
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router';
 import SkillsCard from '../Components/skillsCard';

@@ -1,3 +1,4 @@
+// This is profile section 
 import React, { useEffect, useState } from "react";
 import { onAuthStateChanged, updateProfile } from "firebase/auth";
 import { toast, Toaster } from "react-hot-toast";

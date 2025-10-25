@@ -1,3 +1,4 @@
+// This is details section 
 import React, { useState } from "react";
 import skills from "../../public/skilsData.json";
 import { toast, Toaster } from "react-hot-toast";
