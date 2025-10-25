@@ -22,7 +22,7 @@ const Navbar = () => {
       await signOut(auth);
       navigate("/");
     } catch (error) {
-      console.error(error.message);
+      // console.error(error.message);
     }
   };
   return (

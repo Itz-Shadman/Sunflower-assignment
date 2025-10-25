@@ -13,3 +13,11 @@ SkillSwap is an interactive platform that allows individuals to offer, learn, an
 - **Responsive Design**: Fully responsive for mobile, tablet, and desktop.
 - **Animations & Slider**: Hero slider with Swiper.js and smooth scroll animations with AOS.
 - **SPA Behavior**: Single-page application with persistent Navbar and Footer.
+
+
+
+Live link:https://funny-smakager-44f973.netlify.app/
+npm are : 1)swiper
+          2)AOS Package
+          3)react-hot-toast
+          4)react icons
